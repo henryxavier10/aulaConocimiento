@@ -18,7 +18,7 @@ class TallerController extends Controller
     public function index(Request $request)
     {
         $items = Taller::orderBy('id','ASC')->paginate(5);
-        return view('Taller.index',compact('items'))
+        return view('taller.index',compact('items'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
@@ -30,7 +30,7 @@ class TallerController extends Controller
      public function listar(Request $request)
     {
         $items = Taller::orderBy('id','ASC')->paginate(5);
-        return view('Taller.index2',compact('items'))
+        return view('taller.index2',compact('items'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
@@ -43,14 +43,14 @@ class TallerController extends Controller
     {
 
        
-        return view('Taller.create');
+        return view('taller.create');
     }
 
     public function realizar($id)
     {
         $item = Taller::find($id);
 
-        return view('Taller.realizar',compact('item'));
+        return view('taller.realizar',compact('item'));
     }
 
     /**
@@ -79,7 +79,7 @@ class TallerController extends Controller
     public function show($id)
     {
         $item = Taller::find($id);
-        return view('Taller.show',compact('item'));
+        return view('taller.show',compact('item'));
     }
  
     /**
@@ -91,7 +91,7 @@ class TallerController extends Controller
     public function edit($id)
     {
         $item = Taller::find($id);
-        return view('Taller.editar_taller',compact('item'));
+        return view('taller.editar_taller',compact('item'));
     }
 
     /**
