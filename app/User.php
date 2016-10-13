@@ -23,4 +23,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function evalUsers() {
+
+        return $this->hasMany('App\EvaluacionUsers','users_id')->orderBy('id','DESC');
+    }
 }

@@ -66,7 +66,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+        <a class="btn btn-info" href="{{ URL('realizar_evaluacion',$item->id) }}">Realizar evaluacion  </a>
 
 
 

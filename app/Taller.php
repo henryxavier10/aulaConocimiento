@@ -14,5 +14,10 @@ class Taller extends Model
         return $this->hasMany('App\Recurso')->orderBy('orden');
     }
 
+    public function evaluaciones() {
+
+        return $this->hasOne('App\Evaluacion');
+    }
+
 
 }
