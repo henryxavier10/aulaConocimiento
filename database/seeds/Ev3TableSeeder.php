@@ -18,7 +18,7 @@ class Ev3TableSeeder extends Seeder
         #Accion  
         Ev3::create(array('id_menu'=>9,'ruta'=>'BloqueMotormediano.pdf',));
         Ev3::create(array('id_menu'=>10,'ruta'=>'BloqueMotorgrande.pdf',));
-        Ev3::create(array('id_menu'=>11,'ruta'=>'BloqueMoverladireccion.pdf',));
+        Ev3::create(array('id_menu'=>11,'ruta'=>'BloqueMoverladirección.pdf',));
         Ev3::create(array('id_menu'=>12,'ruta'=>'BloqueMovertanque.pdf',));
         Ev3::create(array('id_menu'=>13,'ruta'=>'BloquePantalla.pdf',));
         Ev3::create(array('id_menu'=>14,'ruta'=>'BloqueSonido.pdf',));

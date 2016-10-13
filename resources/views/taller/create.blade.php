@@ -8,7 +8,7 @@
                 <h2>Crear Nuevo Taller</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('taller.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('taller.index') }}"> Atras</a>
             </div>
         </div>
     </div>

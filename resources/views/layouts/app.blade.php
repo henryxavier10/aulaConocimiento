@@ -31,6 +31,7 @@ desired effect
 -->
 <body class="skin-blue sidebar-mini">
 <div class="wrapper">
+    
 
     @include('layouts.partials.mainheader')
 

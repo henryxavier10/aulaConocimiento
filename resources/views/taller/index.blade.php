@@ -47,9 +47,7 @@
             </a>
             <a class="btn btn-danger" data-toggle="modal" data-target="#etaller{{ $item->id }}"> 
                 <span class="glyphicon glyphicon-remove"></span>
-            </a>
-
-                        
+            </a>        
             <!-- Modal editar -->
             <div> 
                         <div class="modal fade" id="edittaller{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -93,8 +91,6 @@
 
             </div>
 
-
-
             <!-- Modal eliminar -->
             <div>
                 <div class="modal fade" id="etaller{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -117,8 +113,6 @@
                   </div>
                 </div>
             </div>
-
-           
         </td>
     </tr>
     @endforeach
@@ -172,11 +166,4 @@
 <div style="width : 80%; margin : 0 auto;">
 {!! $items->render() !!}
 </div>
-
-
-  
-
-
-
-
 @endsection

@@ -30,12 +30,17 @@ Route::get('realizar/{id}', 'TallerController@realizar');
 
 Route::resource('taller','TallerController');
 
-Route::resource('taller','TallerController');
-
 Route::resource('recurso','RecursoController');
 
 Route::get('pdf', 'PdfController@invoice');
 
 Route::resource('curso','CursoController');
 
-Route::get('ev3/{nombre}','ev3Controller@index');
+Route::get('ev3/{nombre}','ev3Controller@findByName');
+
+Route::get('ev3/eliminar/{id}','ev3Controller@eliminarregistro');
+
+Route::get('menu','MenuController@index');
+
+Route::get('menu/{id}','MenuController@showSonsById');
+Route::resource('ev3','ev3Controller');
